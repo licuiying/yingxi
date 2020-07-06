@@ -1,0 +1,485 @@
+﻿/* CSS Document */
+
+@charset "utf-8";
+@import"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+/*测试部分*/
+
+header,
+nav,
+#banner,
+#img_nav,
+#brief,
+#show,
+footer {
+    width: 100%;
+    /*border:1px #000 solid;*/
+    /*height:120px;*/
+    clear: both;
+}
+
+.container {
+    width: 980px;
+    /*height:120px;
+	border:1px #f00 solid;*/
+    margin: 0 auto;
+    clear: both;
+}
+
+
+/*给页面中的banner设置样式*/
+
+#banner {
+    width: 100%;
+    height: 550px;
+}
+
+#banner .swiper_main {
+    width: 100%;
+    height: 550px;
+    position: relative;
+}
+
+#banner .swiper_main .swiper_list {
+    width: 100%;
+    height: 550px;
+    position: relative;
+}
+
+#banner .swiper_main .swiper_img {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: all 1.5s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+#banner .swiper_main .swiper_img.active {
+    z-index: 100;
+    opacity: 1;
+}
+
+#banner .button .btn i {
+    width: 60px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 80px;
+    background: rgba(51, 51, 51, 0.2);
+    /*border:1px #f00 solid;*/
+    color: #C1CDCD;
+    position: absolute;
+    top: 235px;
+    z-index: 120;
+}
+
+#banner .button .btn i:hover {
+    color: #EEA9B8;
+}
+
+#banner #goPre i {
+    left: 10px;
+}
+
+#banner #goNext i {
+    right: 10px;
+}
+
+#banner .swiper_icon {
+    position: absolute;
+    z-index: 120;
+    bottom: 20px;
+    left: 45%;
+}
+
+#banner .swiper_icon li {
+    width: 20px;
+    height: 20px;
+    background-color: #C1CDCD;
+    border-radius: 100%;
+    margin: 0 20px;
+}
+
+#banner .swiper_icon li.active {
+    background-color: #EEA9B8;
+    border: 1px #fff solid;
+}
+
+
+/*给页面中的图片导航设置样式*/
+
+#img_nav {
+    height: 450px;
+    margin: 90px 0;
+}
+
+#img_nav .img_nav_list .img_list {
+    text-align: center;
+}
+
+#img_nav .img_nav_list .img_list img {
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    margin: 60px 32px;
+    transition: all 0.35s;
+}
+
+#img_nav .img_nav_list .img_list:hover img {
+    transform: scale(1.1);
+}
+
+#img_nav .img_nav_list .img_list p {
+    font-size: 16px;
+    color: #333;
+    margin: 0px 0 15px 0;
+}
+
+#img_nav .img_nav_list .img_list span {
+    color: #666;
+}
+
+
+/*给页面中的brief设置样式*/
+
+#brief {
+    height: 650px;
+    background-color: #eee;
+    clear: both;
+    text-align: center;
+}
+
+#brief .brief_left {
+    width: 500px;
+    margin-top: 50px;
+    background-color: #fff;
+}
+
+#brief .brief_left img {
+    width: 500px;
+    height: 700px;
+    margin-left: 150px;
+}
+
+#brief .brief_right {
+    width: 350px;
+    margin-top: 50px;
+    background-color: #fff;
+}
+
+#brief .brief_right h2 {
+    font-size: 50px;
+    color: #CFCFCF;
+    margin: 20px 0;
+}
+
+#brief .brief_right p {
+    font-size: 22px;
+    color: #999;
+    margin: 15px 0;
+}
+
+#brief .brief_right div:last-of-type img {
+    width: 180px;
+    height: 300px;
+    margin-top: 50px;
+}
+
+#brief .brief_right p:nth-of-type(2) {
+    font-size: 18px;
+    color: #333;
+    margin: 30px 0;
+}
+
+#brief .brief_right p:nth-of-type(3) {
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+}
+
+
+/*给页面中的样式展示设置样式*/
+
+#show {
+    height: 2800px;
+    margin-top: 250px;
+}
+
+#show .line {
+    margin: 25px 0 80px 0;
+    position: relative;
+}
+
+#show .line img {
+    width: 100%;
+}
+
+#show .line p {
+    position: absolute;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    top: -25px;
+    left: 435px;
+}
+
+#show .line span {
+    position: absolute;
+    top: 20px;
+    left: 423px;
+    color: #999;
+}
+
+
+/*样式展示部分1*/
+
+#show .show_1 {
+    height: 1280px;
+    clear: both;
+}
+
+#show .show_1 .show_left_1 {
+    width: 488px;
+    /*border:1px blue solid;*/
+}
+
+#show .show_1 .show_left_1 img {
+    width: 390px;
+    height: 620px;
+    margin: 15px 50px;
+    border-radius: 20px;
+}
+
+#show .show_1 .show_right_1 {
+    width: 490px;
+}
+
+#show .show_1 .show_right_1 h2 {
+    font-size: 45px;
+    text-align: left;
+    font-family: '华文楷体';
+    font-style: italic;
+    color: #CFCFCF;
+}
+
+#show .show_1 .show_right_1 p {
+    font-size: 15px;
+    color: #969696;
+    margin: 20px 0;
+    line-height: 35px;
+}
+
+#show .show_1 .show_right_1 .view {
+    width: 200px;
+    height: 300px;
+    float: left;
+    margin: 20px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+#show .show_1 .show_right_1 .view img {
+    width: 200px;
+    height: 300px;
+}
+
+#show .show_1 .show_right_1 .view .info {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    top: 0;
+    left: 0;
+    background: rgba(153, 153, 153, 0.6);
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+
+#show .show_1 .show_right_1 .view p {
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    font-family: '楷体';
+    padding: 15px 0;
+    margin-top: 230px;
+    transform: translateY(100px);
+}
+
+#show .show_1 .show_right_1 .view:hover .info {
+    opacity: 1;
+}
+
+#show .show_1 .show_right_1 .view img {
+    transition: all 0.2s;
+}
+
+#show .show_1 .show_right_1 .view:hover img {
+    transform: scale(1.2);
+}
+
+#show .show_1 .show_right_1 .view:hover p {
+    transform: translateY(0);
+    transition: all 0.5s;
+}
+
+#show .show_1 .show_right_1 .right_icon {
+    margin-top: 410px;
+}
+
+#show .show_1 .show_right_1 .right_icon img {
+    width: 480px;
+    height: 80px;
+}
+
+#show .show_img {
+    clear: both;
+}
+
+#show .show_img .img_list {
+    float: left;
+    margin: 100px 22px;
+    transition: all 0.5s;
+    border-bottom: 3px #F2F2F2 solid;
+}
+
+#show .show_img .img_list:hover {
+    border-bottom: 3px #EE6363 solid;
+    transform: translateY(-10px);
+}
+
+#show .show_img img {
+    width: 200px;
+    height: 330px;
+}
+
+#show .show_img p {
+    color: #333;
+    text-align: center;
+    margin: 30px 0;
+    font-size: 18px;
+}
+
+
+/*样式展示部分2*/
+
+#show .show_2 .show_left_2 {
+    width: 490px;
+}
+
+#show .show_2 .show_left_2 h2 {
+    font-size: 45px;
+    text-align: left;
+    font-family: '华文楷体';
+    font-style: italic;
+    color: #CFCFCF;
+}
+
+#show .show_2 .show_left_2 p {
+    font-size: 15px;
+    color: #969696;
+    margin: 20px 0;
+    line-height: 25px;
+}
+
+#show .show_2 .show_left_2 .left_img {
+    margin: 40px 20px;
+    width: 200px;
+    height: 300px;
+    position: relative;
+}
+
+#show .show_2 .show_left_2 .left_img .image img {
+    width: 200px;
+    height: 300px;
+    clip-path: circle(400px at center 150px);
+    transition: all 0.35;
+}
+
+#show .show_2 .show_left_2 .textBX {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+}
+
+#show .show_2 .show_left_2 .left_img:hover .image img {
+    clip-path: circle(60px at center 60px);
+    object-fit: cover;
+    transition: all 0.35s;
+}
+
+#show .left_img .textBX h3 {
+    font-size: 24px;
+    font-family: '楷体';
+    font-weight: bold;
+}
+
+#show .left_img .textBX p {
+    color: #333;
+    line-height: 25px;
+}
+
+#show .left_img .textBX a {
+    padding: 10px 30px;
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+}
+
+#show .left_img .textBX h3,
+#show .left_img .textBX p,
+#show .left_img .textBX a {
+    opacity: 0;
+    transition: all 0.35s;
+    transform: translateY(100px);
+}
+
+#show .left_img:hover .textBX h3 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.5s;
+}
+
+#show .left_img:hover .textBX p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.7s;
+}
+
+#show .left_img:hover .textBX a {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.9s;
+}
+
+#show .show_2 .show_left_2 .left_icon {
+    margin-top: 430px;
+}
+
+#show .show_2 .show_left_2 .left_icon img {
+    width: 480px;
+    height: 80px;
+}
+
+#show .show_2 .show_right_2 {
+    width: 490px;
+    margin-top: 100px;
+}
+
+#show .show_2 .show_right_2 img {
+    width: 390px;
+    height: 620px;
+    margin: 15px 50px;
+    border-radius: 20px;
+}

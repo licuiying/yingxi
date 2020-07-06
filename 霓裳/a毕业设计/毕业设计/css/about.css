@@ -1,0 +1,170 @@
+@import"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+/*测试部分*/
+header,nav,#about_main,footer {
+	width: 100%;
+	/*border:1px #000 solid;*/
+	/*height:120px;*/
+	clear: both;
+}
+.container {
+	width: 980px;
+	/*height:120px;
+	border:1px #f00 solid;*/
+	margin: 0 auto;
+	clear: both;
+
+}
+
+/*设置页面中banner的样式*/
+#banner {
+	height: 550px;
+}
+#banner .banner_img {
+	width: 100%;
+	height: 550px;
+}
+#banner .banner_img img {
+	width: 100%;
+	height: 550px;
+}
+
+/*设置页面中联系我们的主要内容的样式*/
+#about_main {
+	height: 1100px;
+	margin-top: 100px;
+	/*border:1px #000 solid;*/
+}
+#about_main .about_line {
+	width: 100%;
+	height: 80px;
+	position: relative;
+	/*border:1px #f00 solid;*/
+}
+
+#about_main .about_line img {
+	width: 100%;
+	padding-top: 25px;
+}
+#about_main .about_line p {
+	position: absolute;
+	font-weight: 700;
+	font-size: 20px;
+	color: #EE6363;
+	top: 0px;
+	left: 450px;
+}
+#about_main .about_line span {
+	position: absolute;
+	top: 40px;
+	left: 430px;
+	color: #EE6363;
+}
+#about_main .about_box {
+	height: 300px;
+	/*border:1px #000 solid;*/
+	margin-top: 60px; 
+}
+#about_main .about_box .tel,
+#about_main .about_box .addr,
+#about_main .about_box .mail {
+	width: 300px;
+	height: 300px;
+	margin-left: 18px;
+	float: left;
+	position: relative;
+	/*border: 1px #f00 solid;*/
+}
+#about_main .about_box .tel i,
+#about_main .about_box .addr i,
+#about_main .about_box .mail i {
+	width: 100px;
+	height: 100px;
+	font-size: 70px;
+	margin: 80px 120px;
+	color: #EE6363;
+}
+#about_main .about_box .tel p,
+#about_main .about_box .addr p,
+#about_main .about_box .mail p {
+	position: absolute;
+	top:185px;
+	color: #666;
+	font-size: 18px;
+}
+#about_main .about_box .tel p {
+	left: 90px;
+}
+#about_main .about_box .addr p {
+	left: 45px;
+}
+#about_main .about_box .mail p {
+	left: 60px;
+}
+
+#about_main .feedback {
+	margin-top: 50px;
+	height: 450px;
+	clear: both;
+	background-color: #eee;
+	/*border:1px #000 solid;*/
+}
+#about_main .feedback .code {
+	width: 350px;
+	height: 350px;
+	/*border:1px #000 solid;*/
+	margin: 45px 60px;
+}
+#about_main .feedback .code img {
+	width: 300px;
+	height: 300px;
+	margin:25px 25px;
+}
+#about_main .feedback .sheet {
+	width: 500px;
+	height: 500px;
+	margin-top: 20px;
+	/*border: 1px #000 solid;*/
+}
+
+#about_main .feedback .sheet form {
+	width: 450px;
+	height: 450px;
+	text-align: center;
+	margin-left: 25px;
+	/*border: 1px #000 solid;*/
+}
+#about_main .feedback .sheet label {
+	font-size: 18px;
+	margin-right:10px;
+	color: #666;
+}
+#about_main .feedback .sheet form input {
+	width: 340px;
+	height: 35px;
+	margin: 20px 0;
+	padding: 5px;
+	outline: none;
+	border: none;
+	border: 1px #ccc solid;
+}
+#about_main #content {
+	resize: none;
+	margin-top: 20px;
+	margin-bottom:;
+	width: 340px;
+	height: 100px;
+	padding: 5px;
+	border-color: #ccc;
+}
+#about_main .feedback .sheet input:last-of-type {
+	width: 185px;
+	height: 45px;
+	font-size: 18px;
+	margin-left: -120px;
+	background-color: #EE6363;
+	color: #fff; 
+}
+#about_main .feedback .sheet span {
+	color: #f00;
+}

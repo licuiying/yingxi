@@ -1,0 +1,131 @@
+@import"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #fff;
+   	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+a {
+	text-decoration: none;
+	color: #333;
+}
+li {
+	list-style: none;
+	float: left;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+/*给页面中的头部设置样式*/
+header{
+	height:25px;
+	background-color:#FFFAFA;
+}
+header .header_left .wb,
+header .header_left .tx,
+header .header_left .tel{
+	width: 20px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	color: #666;
+	float: left;
+	margin-left:8px;
+}
+header .header_left .tel{
+	width:120px;
+}
+header .header_left .wb:hover,
+header .header_left .tx:hover,
+header .header_left .tel:hover{
+	color:#000;
+}
+header .header_right{
+	margin-right:20px;
+}
+header .header_right ul li a{
+	height: 20px;
+	line-height: 25px;
+	color:#666;
+	font-size: 12px;
+	border-right:1px #666 solid;
+	padding:0 15px;
+}
+header .header_right ul li:last-child a{
+	border:none;
+}
+header .header_right ul li a:hover{
+	color:#FD3333;
+}
+
+
+
+
+/*给页面中的导航栏设置样式*/
+nav{
+	height:80px;
+}
+nav .logo img{
+	height:80px;
+	margin-left:100px;
+}
+nav .nav_list{
+	height: 80px;
+	margin-right:10px;
+}
+nav .nav_list ul li{
+	margin:0 8px;
+}
+nav .nav_list ul li a{
+	line-height: 80px;
+	padding:15px 20px;
+	font-size: 16px;
+	border-radius: 20px;
+}
+nav .nav_list ul li:first-of-type a {
+	padding:15px 35px;
+}
+nav .nav_list ul li.active a {
+	background-color:#EE6363;
+	color: #fff;
+}
+nav .nav_list ul li a:hover{
+	background-color:#EE6363;
+	color: #fff;
+	transition: all 0.35s;
+}
+
+
+/*给页面中的底部设置样式*/
+footer{
+	height: 150px;
+	background:rgba(0,0,0,0.9);
+
+}
+footer .footer_list li{
+	margin:30px 30px;
+}
+footer .footer_list li a{
+	color:#fff;
+	font-size: 16px;
+}
+footer .footer_list li a:hover{
+	color:#FD3333;
+}
+footer .footer_addr p{
+	font-size: 15px;
+	color:rgb(156,156,156);
+	margin:15px 0 15px 30px;
+	clear: both;
+}

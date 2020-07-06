@@ -1,0 +1,258 @@
+@import"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@charset "utf-8";
+/* CSS Document */
+/*测试部分*/
+header,nav,#star_list,#product_items,footer {
+	width: 100%;
+	/*border:1px #000 solid;*/
+	/*height:120px;*/
+	clear: both;
+}
+.container {
+	width: 980px;
+	/*height:120px;
+	border:1px #f00 solid;*/
+	margin: 0 auto;
+	clear: both;
+
+}
+
+
+/*设置页面中明星写真列表的样式 左边的列表*/
+#star_list .star_li_box .star_li_left {
+	width: 265px;
+	margin: 15px 0;
+	background: rgba(204,204,204,0.3);
+}
+#star_list .star_li_box .star_li_left .star_a {
+	position: relative;
+	padding: 30px 0;
+	padding-left:30px;
+}
+#star_list .star_li_box .star_li_left .star_a a {
+	font-size: 16px;
+}
+#star_list .star_li_box .star_li_left .star_a::after {
+	content:'>';
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	font-size: 18px;
+	color: #666;
+	font-weight: 700;
+	font-family: '宋体';
+}
+#star_list .star_li_box .star_li_left .star_a:hover {
+	background: rgb(240,128,128);
+	color: #fff;
+}
+#star_list .star_li_box .star_li_left .star_a:hover a,
+#star_list .star_li_box .star_li_left .star_a:hover::after {
+	color: #fff;
+}
+
+/*设置页面中明星写真列表的样式 右边的banner*/
+#star_list .star_li_box .star_li_right {
+	position: relative;
+	width: 700px;
+	height: 355px;
+}
+#star_list .star_li_box .star_li_right .right_banner_img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: all 0.8s;
+}
+#star_list .star_li_box .star_li_right .right_banner_img img {
+	width: 100%;
+	height: 100%;
+}
+#star_list .star_li_box .star_li_right div.active {
+	z-index: 10;
+	opacity: 1;
+}
+#star_list .star_li_box .star_li_right .button .btn i{
+	width:50px;
+	height:75px;
+	line-height:75px;
+	text-align: center;
+	font-size:60px;
+	background: rgba(51,51,51,0.2); 
+	/*border:1px #f00 solid;*/
+	color:#C1CDCD;
+	position: absolute;
+	top:140px;
+	z-index: 120;
+}
+#star_list .star_li_box .star_li_right .button .btn i:hover {
+	color: #EEA9B8;
+
+}
+#star_list .star_li_box .star_li_right #goPre i{
+	left:10px;
+}
+#star_list .star_li_box .star_li_right #goNext i{
+	right:10px;
+}
+
+#star_list .star_img_list {
+	width: 700px;
+}
+#star_list .star_img_list::before,
+#star_list .star_img_list::after {
+	content:'';
+	display: table;
+}
+#star_list .star_img_list::after {
+	clear:both;
+}
+#star_list .star_img_list {
+	*zoom: 1;
+}
+#star_list .star_img_list .star_img {
+	display: inline-block;
+	width: 190px;
+	height: 300px;
+	margin: 20px;
+	border-radius: 20px;
+	transition: all 0.5s;
+	box-shadow: 8px 8px 10px -3px rgba(0,0,0,.6);
+}
+#star_list .star_img_list .star_img:hover{
+	transform: translateY(-8px);
+	box-shadow: 8px 8px 10px -3px rgba(0,0,0,.6);
+}
+#star_list .star_img_list .star_img img{
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+}
+#star_list .star_img_list .text_p h3{
+	margin-top: 45px;
+	margin-bottom: 10px;
+	font-size: 25px;
+	font-family: '宋体';
+	font-style: italic;
+	color:#999;
+	padding-left: 20px;
+}
+#star_list .star_img_list .one .star_img,
+#star_list .star_img_list .two .star_img,
+#star_list .star_img_list .three .star_img, 
+#star_list .star_img_list .four .star_img {
+	position: relative;
+	overflow: hidden;
+}
+#star_list .star_img_list .one .star_img:hover::before {
+	content:'';
+	position: absolute;
+	text-align:center;
+	width: 190px;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	bottom: 0;
+	background: rgba(0,0,0,.5);
+	transition:all .5s;
+}
+#star_list .star_img_list .one .star_img:nth-of-type(1):hover::before {
+	content: '《仙剑奇侠传》赵灵儿';
+}
+#star_list .star_img_list .one .star_img:nth-of-type(2):hover::before {
+	content: '《神雕侠侣》小龙女';
+}
+#star_list .star_img_list .one .star_img:nth-of-type(3):hover::before {
+	content: '《铜雀台》灵雎';
+}
+#star_list .star_img_list .one .star_img:nth-of-type(4):hover::before {
+	content: '《鸿门宴》虞姬';
+}
+#star_list .star_img_list .one .star_img:nth-of-type(5):hover::before {
+	content: '《功夫之王》金燕子';
+}
+#star_list .star_img_list .one .star_img:nth-of-type(6):hover::before {
+	content: '《鸿门宴》虞姬';
+}
+
+
+#star_list .star_img_list .two .star_img:hover::before {
+	content:'';
+	position: absolute;
+	text-align:center;
+	width: 190px;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	bottom: 0;
+	background: rgba(0,0,0,.5);
+	transition:all .5s;
+}
+#star_list .star_img_list .two .star_img:nth-of-type(1):hover::before {
+	content: '《天涯织女》赵嘉仪';
+}
+#star_list .star_img_list .two .star_img:nth-of-type(2):hover::before {
+	content: '《聊斋奇女子》辛十四娘';
+}
+#star_list .star_img_list .two .star_img:nth-of-type(3):hover::before {
+	content: '《醉玲珑》凤卿尘';
+}
+#star_list .star_img_list .two .star_img:nth-of-type(4):hover::before {
+	content: '《步步惊心》若曦';
+}
+#star_list .star_img_list .two .star_img:nth-of-type(5):hover::before {
+	content: '《醉玲珑》凤卿尘';
+}
+#star_list .star_img_list .two .star_img:nth-of-type(6):hover::before {
+	content: '《步步惊心》若曦';
+}
+
+
+#star_list .star_img_list .three .star_img:hover::before {
+	content:'';
+	position: absolute;
+	text-align:center;
+	width: 190px;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	bottom: 0;
+	background: rgba(0,0,0,.5);
+	transition:all .5s;
+}
+#star_list .star_img_list .three .star_img:nth-of-type(1):hover::before {
+	content: '《锦绣未央》李常茹';
+}
+#star_list .star_img_list .three .star_img:nth-of-type(2):hover::before {
+	content: '《云中歌》上官小妹';
+}
+#star_list .star_img_list .three .star_img:nth-of-type(3):hover::before {
+	content: '《锦绣未央》李常茹';
+}
+
+#star_list .star_img_list .four .star_img:hover::before {
+	content:'';
+	position: absolute;
+	text-align:center;
+	width: 190px;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	bottom: 0;
+	background: rgba(0,0,0,.5);
+	transition:all .5s;
+}
+#star_list .star_img_list .four .star_img:nth-of-type(1):hover::before {
+	content: '《仙剑奇侠传三》紫萱';
+}
+#star_list .star_img_list .four .star_img:nth-of-type(2):hover::before {
+	content: '《锦绣未央》李未央';
+}
+#star_list .star_img_list .four .star_img:nth-of-type(3):hover::before {
+	content: '《仙剑奇侠传三》紫萱';
+}
+
+
+#star_list .star_img_list .four {
+	margin-bottom: 100px;
+}

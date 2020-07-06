@@ -1,0 +1,159 @@
+@import"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+/*测试部分*/
+header,nav,#product_nav,#product_items,footer {
+	width: 100%;
+	/*border:1px #000 solid;*/
+	/*height:120px;*/
+	clear: both;
+}
+.container {
+	width: 980px;
+	/*height:120px;
+	border:1px #f00 solid;*/
+	margin: 0 auto;
+	clear: both;
+
+}
+
+
+
+/*设置页面中产品列表导航的样式*/
+#product_nav {
+	height: 500px;
+	/*border:1px #000 solid;*/
+}
+#product_nav .pro_list {
+	width: 265px;
+	background: rgba(204,204,204,0.3);
+	margin-top: 5px;
+}
+#product_nav .pro_list a {
+	display: block;
+	height: 70px;
+	line-height: 70px;
+	font-size: 16px;
+	padding-left: 20px;
+	position: relative;
+}
+#product_nav .pro_list a::after{
+	content: '>';
+	position: absolute;
+	right: 25px;
+	font-size: 18px;
+	font-weight: 700;
+	color: #666;
+	font-family: "宋体";
+}
+#product_nav .pro_list a:hover::after{
+	color: #fff;
+}
+#product_nav .pro_list a:hover {
+	background-color: #F08080;
+	color:#fff;
+}
+#product_nav .pro_right {
+	width: 675px;
+	margin-right: 15px;
+	position: relative;
+}
+#product_nav .pro_right .swiper_list {
+	width: 675px;
+	height: 500px;
+	position: relative;
+}
+#product_nav .pro_right .swiper_list .swiper_img {
+	width:675px;
+	height: 500px;
+	position: absolute;
+	opacity: 0;
+	transition: all 2s;
+}
+#product_nav .pro_right .swiper_list .active {
+	z-index: 1;
+	opacity: 1;
+}
+#product_items {
+	/*height: 1500px;*/
+	margin-top:80px;
+	/*border: 1px #000 solid;*/
+}
+#product_items .textBox h2{
+	color: #FF4040;
+	margin:10px 0;
+}
+
+#product_items .itemBX {
+	height: 820px;
+	/*border: 1px #000 solid;*/
+}
+#product_items .text {
+	height: 90px;
+	position: relative;
+	/*border: 1px #f00 solid;*/
+}
+#product_items .text p:first-of-type {
+	color: #333;
+	font-weight: 700;
+	font-size: 17px;
+	margin: 10px 0;
+}
+#product_items .text a {
+	position: absolute;
+	top: 0;
+	right: 35px;
+	display: block;
+	color: #999;
+	font-size: 16px;
+}
+#product_items .text p:last-of-type {
+	color: #666;
+}
+#product_items .itemBX .item_1 {
+	height: 610px;
+	/*border: 1px #000 solid;*/
+}
+#product_items .itemBX .item_1 .item_1_left {
+	width: 470px;
+	height: 610px;
+	/*border: 1px #f00 solid;*/
+}
+#product_items .itemBX .item_1 .item_1_left img {
+	margin: 0 10px;
+}
+#product_items .itemBX .item_1 .item_1_right {
+	width: 500px;
+	height: 610px;
+	/*border: 1px #f00 solid;*/
+}
+#product_items .itemBX .item_1 .item_1_right img {
+	width: 215px;
+	height: 298px;
+	margin:0 0 10px 20px;
+}
+
+#product_items .itemBX .item_2 {
+	height: 610px;
+	/*border: 1px #000 solid;*/
+	/*margin:45px 0;*/
+}
+#product_items .itemBX .item_2 .item_2_left {
+	width: 470px;
+	height: 610px;
+	/*border: 1px #f00 solid;*/
+}
+#product_items .itemBX .item_2 .item_2_left img {
+	width: 215px;
+	height: 298px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+#product_items .itemBX .item_2 .item_2_right {
+	width: 500px;
+	height: 610px;
+	/*border: 1px #f00 solid;*/
+}
+#product_items .itemBX .item_2 .item_2_right img {
+	margin-left: 23px;
+	/*margin-right: 10px;*/
+}

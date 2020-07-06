@@ -1,0 +1,112 @@
+@import"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+/*测试部分*/
+header,nav,#banner,#content,footer {
+	width: 100%;
+	/*border:1px #000 solid;*/
+	/*height:120px;*/
+	clear: both;
+}
+.container {
+	width: 980px;
+	/*height:120px;
+	border:1px #f00 solid;*/
+	margin: 0 auto;
+	clear: both;
+
+}
+
+/*设置页面中banner的样式*/
+#banner .banner_img{
+	height: 550px;
+}
+#banner .banner_img img {
+	width: 100%;
+	height: 550px;
+}
+
+/*设置页面中网站介绍主要内容的样式*/
+#content {
+	height: 600px;
+	margin-top: 60px;
+	/*border:1px #000 solid;*/
+}
+#content .cont_line img{
+	width: 100%;
+}
+#content .cont_line {
+	height: 65px;
+	position: relative;
+	/*border:1px #000 solid;*/
+}
+#content .cont_line img {
+	margin-top:25px;
+}
+#content .cont_line p {
+	position: absolute;
+	font-weight: 700;
+	font-size: 20px;
+	color: #EE6363;
+	top: 0px;
+	left: 450px;
+}
+#content .cont_line span {
+	position: absolute;
+	top: 40px;
+	left: 425px;
+	color: #EE6363;
+}
+#content .textBox {
+	margin-top: 60px;
+}
+#content .textBox p{
+	line-height: 30px;
+	color: #8C8C8C;
+}
+#content .cont_imgBox {
+	height: 250px;
+	margin-top: 60px;
+	/*border: 1px #000 solid;*/
+}
+#content .cont_imgBox img {
+	width: 300px;
+	height: 200px;
+	margin:25px 11px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
